@@ -1,45 +1,45 @@
 if( $('#custom-encounter-type').length ) {
+    $("#template-data").hide();
     $(".add-text-field").click(function(){
-        console.log('dd');
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="text-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;text-align:center"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="text-field-confirm" style="padding:5px;"><i class="fa fa-check-square-o" style="font-size:25px;" aria-hidden="true"></i></a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
 
     $(".add-long-text-field").click(function(){
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="textarea-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="textarea-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
 
     $(".add-number-field").click(function(){
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="number-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="number-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
     $(".add-email-field").click(function(){
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="email-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="email-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
     $(".add-date-field").click(function(){
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="date-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><a class="date-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
     $(".add-select-field").click(function(){
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><div class="row" id="select-option-'+file+'" style="margin-top:10px;"><div class="col-md-8"><input class="form-control"/></div><div class="col-md-2"><a class="add-more-select-option">Add</a></div></div><a class="select-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><div class="row" id="select-option-'+file+'" style="margin-top:10px;"><div class="col-md-8"><input class="form-control"/></div><div class="col-md-2"><a class="add-more-select-option">Add</a></div></div><a class="select-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
     $(".add-radio-field").click(function(){
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><div class="row" id="select-option-'+file+'" style="margin-top:10px;"><div class="col-md-8"><input class="form-control"/></div><div class="col-md-2"><a class="add-more-select-option">Add</a></div></div><a class="radio-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><div class="row" id="select-option-'+file+'" style="margin-top:10px;"><div class="col-md-8"><input class="form-control"/></div><div class="col-md-2"><a class="add-more-select-option">Add</a></div></div><a class="radio-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
     $(".add-chekbox-field").click(function(){
         var file= generateField();
-        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><div class="row" id="select-option-'+file+'" style="margin-top:10px;"><div class="col-md-8"><input class="form-control"/></div><div class="col-md-2"><a class="add-more-select-option">Add</a></div></div><a class="checkbox-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
+        var text = '<div class="text-field" id="' + file + '" style="background:#eeeeee;padding:5px;margin-bottom:5px;"><span  id="'+file+'-text-danger" class="text-danger"></span><br><div class="form-group" style="text-align:center"><input type="text" placeholder="Enter the placeholder" class="form-control "/><br><br><input type="text" name="" placeholder="Enter the name" class="form-control "><div class="row" id="select-option-'+file+'" style="margin-top:10px;"><div class="col-md-8"><input class="form-control"/></div><div class="col-md-2"><a class="add-more-select-option">Add</a></div></div><a class="checkbox-field-confirm">Save</a><a class="text-field-remove">Remove</a></div>';
         $(".builder-area").append(text);
     });
 
@@ -335,6 +335,7 @@ if( $('#custom-encounter-type').length ) {
 
     $(document).on('click', '.export-html', function () {
         var data = $(".preview-area").html();
+        $("#template-data").show();
         $("#template-data").html(data);
     });
 }
