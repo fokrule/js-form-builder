@@ -6,3 +6,18 @@
 .light-green-bg {
     background-color: lightgreen;
 }
+
+.field-button {
+    padding: 7px;
+    border: 1px solid green;
+    border-radius: 10%;
+    margin: 2px;
+    text-align: center;
+}
+
+.field-button:hover {
+    background-color: aliceblue;
+}
+.field-button a:hover {
+    background-color: aliceblue !important;
+}
