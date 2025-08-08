@@ -21,6 +21,9 @@ You can add the following types of fields to your form:
 4. **Export Your Form:** After completing your form design, you can export the HTML code and embed it into any web page or project.
 5. **Database Integration:** This library is designed to allow form data to be saved to a database, enabling you to load and manage dynamic forms directly from your database.
 
+![Form Preview](/image/image.png)
+
+
 ## Future Enhancements
 - **Field Reordering:** Implementing arrow buttons and drag-and-drop functionality to rearrange form fields easily.
 - **Save All Button:** Adding a **Save All** button to simplify the saving process, allowing you to save all fields at once instead of individually.
